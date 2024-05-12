@@ -1,0 +1,12 @@
+*{/*Os efeitos podem ser aplicados de três maneiras: com a tag h1; no valor  atribuído .titulo; ou geral com com asterisco* */
+    margin:0;
+    font-size:12px;
+    box-sizing: border-box;
+    
+
+}
+
+ul{
+    list-style: none;/*Remove marcadores (bolinhas °) */
+
+}

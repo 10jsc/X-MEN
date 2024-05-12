@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>X-Men do zero ao programador contratado</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./CSS/estilos.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <style>
+      body::before {
+        content: '';
+        background-image: url(../Xman/imagens/bg-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.2;
+      }
+    </style>
+  </head>
+  <body style="background-color: #000000; color: #ffffff">
+    <header class="cabecalho">
+      <img class="logo" src="./imagens/logo.svg" alt="Logo x-man" />
+    </header>
+
+    <main class="selecao-de-personagens">
+      <section class="personagens">
+        <h1
+          class="titulo"
+          style="font-family: 'oxanium', cursive"
+        >
+          Selecione um personagem
+        </h1>
+        <ul class="lista-de-personagens list-unstyled">
+          <li
+            class="personagem"
+            id="ciclope"
+            data-nome="Ciclope"
+            data-descricao="Scott Summers, conhecido por Ciclope. Tem o poder de Rajadas ópticas devido a um acidente na infância, mas não consegue controlá-los."
+            data-imagem-grande="./imagens/card-ciclope.png"
+            data-cor-fundo="#DAA520"
+          >
+            <img src="./imagens/card-ciclope.jpg" alt="Personagem Ciclope" />
+          </li>
+          <li
+            class="personagem"
+            id="jean-grey"
+            data-nome="Jean Grey"
+            data-descricao="Telepata, lê mentes, projeta pensamentos na mente de outros, levita a si própria, outras pessoas e objetos. Conhecida como Fênix a entidade cósmica Força Fênix"
+            data-imagem-grande="./imagens/card-jean-grey.png"
+            data-cor-fundo="#009900"
+          >
+            <img src="./imagens/card-jean-grey.jpg" alt="Personagem Jean-Grey" />
+          </li>
+          <li
+            class="personagem"
+            id="lince-negra"
+            data-nome="Lince Negra"
+            data-descricao="A Lince Negra passa pelos objetos na mesma velocidade em que ela está se movendo antes de entrar neles."
+            data-imagem-grande="./imagens/card-lince-negra.png"
+            data-cor-fundo="#BA55D3"
+          >
+            <img src="./imagens/card-lince-negra.jpg" alt="Personagem Lince-negra" />
+          </li>
+          <li
+            class="personagem"
+            id="magneto"
+            data-nome="Magneto"
+            data-descricao="Obstinado ao ideal da supremacia dos mutantes, ativista contra os humanos e em defesa dos mutantes, seu poder de magnetismo esgamar, atrai e repulsar metais.."
+            data-imagem-grande="./imagens/card-magneto.png"
+            data-cor-fundo="#8B008B"
+          >
+            <img src="./imagens/card-magneto.jpg" alt="Personagem Magneto" />
+          </li>
+          <li
+            class="personagem"
+            id="noturno"
+            data-nome="Noturno"
+            data-descricao="Tem o poder de teletransporte, invisibilidade em sombras profundas, e as mãos e os pés grudam nas paredes"
+            data-imagem-grande="./imagens/card-noturno.png"
+            data-cor-fundo="#8B0000"
+          >
+            <img src="./imagens/card-noturno.jpg" alt="Personagem Noturno" />
+          </li>
+          <li
+            class="personagem"
+            id="tempestade"
+            data-nome="Tempestade"
+            data-descricao="Ela é capaz de controlar o clima e a atmosfera e é considerada uma dos mutantes mais poderosas do planeta."
+            data-imagem-grande="./imagens/card-tempestade.png"
+            data-cor-fundo="#7B68EE"
+          >
+            <img
+              src="./imagens/card-tempestade.jpg"
+              alt="Personagem card-tempestade"
+            />
+          </li>
+          <li
+            class="personagem"
+            id="vampira"
+            data-nome="Vampira"
+            data-descricao="Tem o poder de sugar a vitalidade, memória e poderes de outros seres vivos através do contato com a pele."
+            data-imagem-grande="./imagens/card-vampira.png"
+            data-cor-fundo="#00FFFF"
+          >
+            <img src="./imagens/card-vampira.jpg" alt="Personagem Vampira" />
+          </li>
+          <li
+            class="personagem"
+            id="wolverine"
+            data-nome="Wolverine"
+            data-descricao="Wolverine é o típico anti-herói, sua estrutura óssea composta pelo metal adamantium, e o fator de cura acelerado e regenera tecidos danificados. "
+            data-imagem-grande="./imagens/card-wolverine.png"
+            data-cor-fundo="#000066"
+          >
+            <img src="./imagens/card-wolverine.jpg" alt="Personagem wolverine" />
+          </li>
+        </ul>
+      </section>
+      <section class="personagem-selecionado">
+        <div class="personagem-grande-container">
+          <img
+            class="personagem-grande"
+            src="./imagens/card-ciclope.png"
+            alt="Personagem selecionado"
+          />
+        </div>
+        <div class="informacoes-personagem">
+          <h2 class="nome-personagem" id="nome-personagem">Ciclope</h2>
+          <p class="descricao-personagem" id="descricao-personagem">
+            Scott Summers, conhecido por Ciclope. Tem o poder de Rajadas ópticas
+            devido a um acidente na infância, mas não consegue controlá-los.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <script>
+        const personagens = document.querySelectorAll('.personagem');
+        const nomePersonagem = document.getElementById('nome-personagem');
+        const descricaoPersonagem = document.getElementById('descricao-personagem');
+        const imagemPersonagemGrande = document.querySelector(
+          '.personagem-grande'
+        );
+        const personagemGrandeContainer = document.querySelector(
+          '.personagem-grande-container'
+        );
+
+        personagens.forEach((personagem) => {
+          personagem.addEventListener('click', () => {
+            // Remove a classe 'selecionado' do personagem atualmente selecionado
+            const personagemSelecionado = document.querySelector(
+              '.personagem.selecionado'
+            );
+            if (personagemSelecionado) {
+              personagemSelecionado.classList.remove('selecionado');
+            }
+
+            // Adiciona a classe 'selecionado' ao personagem clicado
+            personagem.classList.add('selecionado');
+
+            // Atualiza as informações na seção 'personagem-selecionado'
+            nomePersonagem.textContent = personagem.dataset.nome;
+            descricaoPersonagem.textContent = personagem.dataset.descricao;
+            imagemPersonagemGrande.src = personagem.dataset.imagemGrande;
+
+            // Define a cor de fundo do personagem grande
+            personagemGrandeContainer.style.backgroundColor =
+              personagem.dataset.corFundo;
+          });
+        });
+      </script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"
+      ></script>
+      <script src="public/js/bootstrap.bundle.min.js"></script>
+    </footer>
+  </body>
+</html>
